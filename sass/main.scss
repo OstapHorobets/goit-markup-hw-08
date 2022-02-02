@@ -1,0 +1,32 @@
+/*
+шрифты
+roboto 400 500 700 900
+raleway 700
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+cubic-bezier(0.4, 0, 0.2, 1)
+
+transition-property:
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
+transition-delay: 0;
+
+*/
+@import "./utils/vars";
+@import "./base/common";
+@import "./base/reset";
+@import "./components/container";
+@import "./utils/visuallyhidden";
+
+@import "./components/section-title";
+@import "./components/logo";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/occupation";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./components/modal";
+@import "./layout/portfolio";

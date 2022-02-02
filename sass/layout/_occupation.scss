@@ -1,0 +1,44 @@
+.occupation__section {
+    padding-top: 0;
+  }
+  
+  .occupation__list {
+    display: flex;
+    justify-content: center;
+
+    & li+li {
+      margin-left: 30px;
+    }
+  }
+  
+  .occupation__item {
+    position: relative;
+  }
+  
+  
+  .occupation__overlay {
+    background-color: var(--dark-background);
+    display: block;
+    position: absolute;
+    height: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 80%;  
+  }
+  
+  .occupation__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-background);
+  
+  display: block;
+  width: 370px;
+  position: absolute;
+  bottom: 27px;
+  }
