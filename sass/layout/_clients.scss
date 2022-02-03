@@ -1,18 +1,22 @@
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
   }
   
 .clients__item {
   display: flex;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  } }
+  margin: 15px;
+    // &:not(:last-child) {
+  //   margin-right: 30px;
+  // } 
+}
 
   .clients__link {
     color: var(--social-icon);
-    width: 170px;
-    height: 92px;
+    
+    
     border: 1px solid var(--social-icon);
     border-radius: 4px;
     display: flex;
@@ -24,6 +28,16 @@
     &:hover, &:focus {
       border: 1px solid var(--accent-color);
       color: var(--accent-color);
+      }
+
+      @media screen and (min-width: 480px) {
+        width: 210px;
+        height: 92px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
       }
     }
 
