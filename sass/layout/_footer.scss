@@ -154,7 +154,7 @@
       margin-right: auto;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desk {
       margin-left: 93px;
     }
     }
@@ -196,7 +196,7 @@
 }
 
 .subscribe__form {
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
   }
   
@@ -214,7 +214,7 @@
   color: var(--white);
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 358px;
   }
 }

@@ -43,12 +43,12 @@
     }
     
 
-    @media screen and (min-width: 768px) {
+    @include tab {
       width: 450px;
       height: 609px;      
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desk {
       min-width: 528px;
       min-height: 581px;      
     }
