@@ -8,6 +8,14 @@
         }
   }
 
+  .header__menu {
+    display: none;
+
+    @include tab {
+      display: flex;
+    }
+  }
+
   .nav {
     display: flex;
     margin-left: 93px;

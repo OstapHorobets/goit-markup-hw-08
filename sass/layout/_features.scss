@@ -12,12 +12,12 @@
         margin-bottom: 30px;
       }
 
-      @media screen and (min-width: 768px) {
+      @include tab {
         margin: 15px;
         flex-basis: calc(100% / 2 - 30px);        
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desk {
         flex-basis: calc(100% / 4 - 30px)
       }
 
@@ -43,7 +43,7 @@
       border-radius: 4px;
       margin-bottom: 30px;
       
-      @media screen and (min-width: 1200px) {
+      @include desk {
         width: 270px;
       }
       }

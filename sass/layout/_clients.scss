@@ -8,9 +8,6 @@
 .clients__item {
   display: flex;
   margin: 15px;
-    // &:not(:last-child) {
-  //   margin-right: 30px;
-  // } 
 }
 
   .clients__link {
@@ -30,12 +27,12 @@
       color: var(--accent-color);
       }
 
-      @media screen and (min-width: 480px) {
+      @include tel {
         width: 210px;
         height: 92px;
       }
 
-      @media screen and (min-width: 1200px) {
+     @include desk {
         width: 170px;
         height: 92px;
       }
