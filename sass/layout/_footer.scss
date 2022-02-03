@@ -6,10 +6,21 @@
     background-color: var(--dark-background);
   }
   
+  .footer__nav {
+    @media screen and  (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+  }
+
   .footer__logo {
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
+
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   .address {
@@ -26,6 +37,14 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     }
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   .footer__list li+li {
@@ -41,7 +60,16 @@
         text-align: center;
       }
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-left: 76px;
+        padding-right: 89px;
+      }
+
+      @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
       }
@@ -50,6 +78,11 @@
     .join__section {
       @media screen and (max-width: 767px) {
         margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 768px) {
+        // margin-left: 165px;
+        text-align: center;
       }
 
       @media screen and (min-width: 1200px) {
@@ -68,12 +101,16 @@
     text-transform: uppercase;
     color: var(--main-background);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
     }
   
     .join__social {
       display: flex;
       align-items: center;
-      justify-items: center;
+      justify-content: center;
     }
   
     .join__social-link {
@@ -110,6 +147,12 @@
     @media screen and (max-width: 767px) {
       display: block;
       width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width) {
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media screen and (min-width: 1200px) {
@@ -154,7 +197,7 @@
 }
 
 .subscribe__form {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
   
@@ -176,3 +219,5 @@
     width: 358px;
   }
 }
+
+
