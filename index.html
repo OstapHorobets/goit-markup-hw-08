@@ -18,11 +18,17 @@
 <header class="header-nav header">
 <div class="header-div container">
 
-        <a lang="en" href="./index.html" class="logo-link"><span class="logo logo-accent">Web</span><span
+    <a lang="en" href="./index.html" class="logo-link"><span class="logo logo-accent">Web</span><span
                 class="logo logo-header">Studio</span></a>
+
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile menu">
+        <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-open"></use>
+        </svg>
+    </button>
         
-    <div class="header__menu">
-        <nav>
+    
+        <nav class="nav__menu">
             <ul class="nav list">
                 <li><a class="nav__link current" href="./index.html">Студия</a></li>
                 <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -41,7 +47,7 @@
                 </svg>
                 +38 096 111 11 11</a></li>
         </ul>
-    </div>
+    
 
 </div>
 </header>
@@ -498,7 +504,49 @@
             </div>
         </div>
 
+<!-- Mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+
+    <button class="menu-toggle js-close-menu">
+        <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-close"></use>
+        </svg>
+    </button>
+
+    <nav class="mob__nav-menu">
+        <ul class="mob-nav list">
+            <li class="mob-nav__item"><a class="mob__nav-link" href="./index.html">Студия</a></li>
+            <li class="mob-nav__item"><a class="mob__nav-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="mob-nav__item"><a class="mob__nav-link" href="">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <ul class="mob__contact-list">
+        <li class="mob-nav__item"><a class="mob__nav-contact" href="mailto:info@devstudio.com">
+                info@devstudio.com</a></li>
+        <li class="mob-nav__item"><a class="mob__nav-contact" href="tel:+380961111111">
+                +38 096 111 11 11</a></li>
+    </ul>
+
+    <ul class="mob__nav-social">
+        <li class="mob__nav-social--item"><a class="mob__nav-social--link link" href="">Instagram</a></li>
+        <li class="mob__nav-social--item"><a class="mob__nav-social--link link" href="">Twitter</a></li></li>
+        <li class="mob__nav-social--item"><a class="mob__nav-social--link link" href="">Facebook</a></li></li>
+        <li class="mob__nav-social--item"><a class="mob__nav-social--link link" href="">LinkedIn</a></li></li>
+    </ul>
+</div>
+
+
+
         <script src="./js/modal.js"></script>
+
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
     </body>
 </html>

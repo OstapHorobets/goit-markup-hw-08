@@ -8,22 +8,28 @@
         }
   }
 
-  .header__menu {
-    @media screen and (max-width: 767px) {
-      display: none;      
-    }
+  // .header__menu {
+  //    display: none;      
+    
 
-    @include tab {
-      display: flex;
-    }
+  //   @include tab {
+  //     display: flex;
+  //   }
+  // }
+  .header-div {
+    position: relative;
   }
 
-  .nav {
+  .nav__menu {
+    display: none;
+
+    @include tab {
     display: flex;
     margin-left: 93px;
 
     & li:not(:last-child) {
       margin-right: 50px;
+    }
     }
   }
     
@@ -69,11 +75,15 @@
   }
   
   .contact-list {
+    display: none;
+
+    @include tab {
     display: flex;
     margin-left: auto;
 
     & li + li {
       margin-left: 50px;
+    }
     }
   }
   

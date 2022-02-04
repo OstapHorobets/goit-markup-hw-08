@@ -15,6 +15,8 @@ transition-delay: 0;
 @import "./utils/vars";
 @import "./base/common";
 @import "./base/reset";
+@import "./utils/mixins";
+
 @import "./components/container";
 @import "./utils/visuallyhidden";
 
@@ -22,6 +24,7 @@ transition-delay: 0;
 @import "./components/logo";
 
 @import "./layout/header";
+@import "./layout/mob-menu";
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/occupation";

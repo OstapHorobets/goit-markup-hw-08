@@ -9,10 +9,10 @@
     }
 
     @include tab {
-    width: 768px;
+    max-width: 768px;
     }
 
     @include desk {
-    width: 1200px;
+    max-width: 1200px;
     }
     }

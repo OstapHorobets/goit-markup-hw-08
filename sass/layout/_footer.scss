@@ -5,6 +5,28 @@
     padding-bottom: 60px;
     background-color: var(--dark-background);
   }
+
+  .footer__container {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-left: 76px;
+      padding-right: 89px;
+    }
+
+    @include desk {
+      display: flex;
+      align-items: baseline;
+    }
+    
+  }
   
   .footer__nav {
     @media screen and  (min-width: 768px) and (max-width: 1199px) {
@@ -55,26 +77,7 @@
     }
   }
   /* join footer section */
-    .footer__container {
-      @media screen and (max-width: 767px) {
-        text-align: center;
-      }
-
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-left: 76px;
-        padding-right: 89px;
-      }
-
-      @include desk {
-        display: flex;
-        align-items: baseline;
-      }
-      
-    }
+    
     .join__section {
       @media screen and (max-width: 767px) {
         margin-bottom: 60px;
@@ -143,7 +146,6 @@
 //subscribe section
 
 .subscribe__section {
-    display: block;
     @media screen and (max-width: 767px) {      
       width: 100%;
     }
