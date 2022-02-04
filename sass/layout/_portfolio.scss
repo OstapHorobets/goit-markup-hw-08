@@ -69,16 +69,14 @@
     font-size: 16px;
   }
 
-  .projects {
-    
+  .projects {    
     margin: -15px;
     display: flex;
+    justify-content: center;
     
 
     @media screen and (max-width: 767px) {
-      flex-direction: column;
-      justify-content: center;
-      
+      flex-direction: column;        
     }
 
     // & li:nth-child(3n+1) {
@@ -99,18 +97,20 @@
   
   .projects__item {
      margin: 15px;
-     flex-basis: calc(100% / 1 - 2 * 15px);
+    //  flex-basis: calc(100% / 1 - 2 * 15px);
+    max-width: 450px;
 
      @include tab {
-      flex-basis: calc(100% / 2 - 2 * 15px);
+      // flex-basis: calc(100% / 2 - 2 * 15px);
+      width: 354px;
+      height: 440px;
      }
 
      @include desk {
-      flex-basis: calc(100% / 3 - 3 * 15px);
+      // flex-basis: calc(100% / 3 - 3 * 15px);
+      width: 370px;
+      height: 404px;
      }
-    
-    // margin-bottom: 30px;  
-    // margin-left: 30px;
   }
     
   .projects__link {
