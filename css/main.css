@@ -398,6 +398,12 @@ ul {
   color: var(--accent-color);
 }
 
+.mob-tel {
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--accent-color);
+}
+
 .mob__nav-social {
   display: flex;
   padding-top: 64px;
@@ -1343,19 +1349,19 @@ ul {
 
 .projects__item {
   margin: 15px;
-  max-width: 450px;
+  width: calc(100% / 1 - 2 * 15px);
 }
 
 @media screen and (min-width: 768px) {
   .projects__item {
-    width: 354px;
+    width: calc(100% / 2 - 2 * 15px);
     height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects__item {
-    width: 370px;
+    width: calc(100% / 3 - 3 * 15px);
     height: 404px;
   }
 }

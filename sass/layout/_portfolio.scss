@@ -97,18 +97,18 @@
   
   .projects__item {
      margin: 15px;
-    //  flex-basis: calc(100% / 1 - 2 * 15px);
-    max-width: 450px;
+     width: calc(100% / 1 - 2 * 15px);
+    // max-width: 450px;
 
      @include tab {
-      // flex-basis: calc(100% / 2 - 2 * 15px);
-      width: 354px;
+      width: calc(100% / 2 - 2 * 15px);
+      // width: 354px;
       height: 440px;
      }
 
      @include desk {
-      // flex-basis: calc(100% / 3 - 3 * 15px);
-      width: 370px;
+      width: calc(100% / 3 - 3 * 15px);
+      // width: 370px;
       height: 404px;
      }
   }
