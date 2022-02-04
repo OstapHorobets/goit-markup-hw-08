@@ -36,6 +36,10 @@
     &:hover, &:focus {
         fill: var(--accent-color);
     }
+
+    @include tab {
+        display: none;
+    }
 }
 
 .mob__nav-menu {

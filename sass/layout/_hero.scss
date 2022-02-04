@@ -13,18 +13,21 @@
     }
   
   .hero__title {
-    font-size: 44px;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;    
+    
     color: var(--white);
     font-weight: 900;
     line-height: 1.36;
     text-transform: uppercase;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 767px) {
-    font-size: 26px;
-    line-height: 42px;
-    letter-spacing: 0.06em;
-    }
+    @include desk {
+      font-size: 44px;
+      line-height: 60px;      
+          }
   }
   .hero__button {
     background-color: var(--accent-color);
