@@ -22,11 +22,8 @@
   }
   @media screen and (max-width: 767px) {
     &:not(:nth-child(n+4)) {
-      margin-bottom: 15px;
+      margin-bottom: 15px;  }
   }
-
-  }
-
   }
 
     
@@ -97,25 +94,21 @@
   
   .projects__item {
      margin: 15px;
-     width: calc(100% / 1 - 2 * 15px);
-    // max-width: 450px;
+     width: calc(100% / 1 - 1 * 15px);
+    max-width: 450px;
 
      @include tab {
       width: calc(100% / 2 - 2 * 15px);
-      // width: 354px;
-      height: 440px;
      }
 
      @include desk {
-      width: calc(100% / 3 - 3 * 15px);
-      // width: 370px;
+      width: 370px;
       height: 404px;
      }
   }
     
   .projects__link {
     display: block;
-    width: 370px;
     position: relative;
   
     transition: box-shadow 250ms var(--cubic);
@@ -132,7 +125,6 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    width: 370px;
   }
   
   .portfolio__overlay {
@@ -176,7 +168,7 @@
   }
   
   .projects__text {
-    width: 370px;
+    width: 100%;
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;

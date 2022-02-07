@@ -441,13 +441,44 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg-mb.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 767px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg-mb@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg-tb.jpg);
+  }
+}
+
+@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg-tb@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg.jpg);
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-bg@2x.jpg);
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
@@ -1349,26 +1380,25 @@ ul {
 
 .projects__item {
   margin: 15px;
-  width: calc(100% / 1 - 2 * 15px);
+  width: calc(100% / 1 - 1 * 15px);
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .projects__item {
     width: calc(100% / 2 - 2 * 15px);
-    height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects__item {
-    width: calc(100% / 3 - 3 * 15px);
+    width: 370px;
     height: 404px;
   }
 }
 
 .projects__link {
   display: block;
-  width: 370px;
   position: relative;
   transition: box-shadow 250ms var(--cubic);
 }
@@ -1383,7 +1413,6 @@ ul {
   overflow: hidden;
   top: 0;
   left: 0;
-  width: 370px;
 }
 
 .portfolio__overlay {
@@ -1423,7 +1452,7 @@ ul {
 }
 
 .projects__text {
-  width: 370px;
+  width: 100%;
   padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
