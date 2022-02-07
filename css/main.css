@@ -1398,7 +1398,9 @@ ul {
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   transition: box-shadow 250ms var(--cubic);
 }
@@ -1453,6 +1455,7 @@ ul {
 
 .projects__text {
   width: 100%;
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
