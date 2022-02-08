@@ -1,42 +1,31 @@
 .header {
-    border-bottom: 1px solid #ECECEC; 
+  border-bottom: 1px solid #ececec;
+}
 
-      
-  }
+// .header__menu {
+//    display: none;
 
-  // .header__menu {
-  //    display: none;      
-    
+//   @include tab {
+//     display: flex;
+//   }
+// }
+.header-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-  //   @include tab {
-  //     display: flex;
-  //   }
-  // }
-  .header-div {
-    position: relative;
+.nav__menu {
+  display: none;
+
+  @include tab {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
   }
+}
 
-  .nav__menu {
-    display: none;
-
-    @include tab {
-      display: flex;
-    }
-
-    @include desk {
-    margin-left: 93px;
-
-    & li:not(:last-child) {
-      margin-right: 50px;
-    }
-    }
-  }
-
-  .nav__list {
-    @include tab {
+.nav__list {
+  @include tab {
     display: flex;
 
     margin-left: 88px;
@@ -44,110 +33,110 @@
     li + li {
       margin-left: 50px;
     }
-    }
   }
-    
-  .nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    color: var(--title-color);
-    font-weight: 500;
-    line-height: 1.17;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-  
-    transition: color 250ms var(--cubic);
+}
 
-    &:hover, &:focus, &:active {
-      color: var(--accent-color)
-    }
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    @include tab {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;      
-    }
-    }
-  
-  .current {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
     color: var(--accent-color);
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    position: relative;
-
-    &::after {
-      content: "";
-      display: flex;
-      width: 100%;
-      height: 4px;
-      background-color: var(--accent-color);
-      border-radius: 2px;
-      position: absolute;
-      bottom: -1px;
-    }
   }
-  
-  .contact-list {
-    margin-left: auto;
 
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-    
-    @include tab {
-      
-    }
+  @include tab {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 
-    @include desk {
+.current {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--accent-color);
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  position: relative;
+
+  &::after {
+    content: "";
     display: flex;
-    
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+  }
+}
+
+.contact-list {
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tab {
+  }
+
+  @include desk {
+    display: flex;
+
     & li + li {
       margin-left: 30px;
     }
-    }
   }
-  
-  .nav__contact {
-    display: flex;
-    
-    
-  
-    color: var(--main-text);
-    font-weight: 500;
-    line-height: 1.17;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-  
-    transition: color 250ms var(--cubic);
-   
-    &:hover, &:focus {
-      color: var(--accent-color);
-    }
+}
 
-    @include tab {
+.nav__contact {
+  display: flex;
+
+  color: var(--main-text);
+  font-weight: 500;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @include tab {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.02em;
     padding: 5px;
-    }
+  }
 
-    @include desk {
-      padding-top: 32px;
+  @include desk {
+    padding-top: 32px;
     padding-bottom: 32px;
     justify-content: space-evenly;
     justify-content: center;
     align-items: center;
-    }
   }
+}
 
-  .contacts__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

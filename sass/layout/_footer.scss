@@ -1,166 +1,170 @@
-.footer {  
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--dark-background);
-  }
+.footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-background);
+}
 
-  .footer__container {
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-left: 76px;
-      padding-right: 89px;
-    }
-
-    @include desk {
-      display: flex;
-      align-items: baseline;
-    }
-    
-  }
-  
-  .footer__nav {
-    @media screen and  (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 60px;
-    }
-  }
-
-  .footer__logo {
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
-
+.footer__container {
+  @media screen and (max-width: 767px) {
     text-align: center;
-    @include desk {
-      text-align: left;
-    }
   }
 
-  .address {
-    color: var(--address-inactive);
-    font-style: normal;
-    text-decoration: none;  
-    transition: color 250ms var(--cubic);
-    &:hover, &:focus {
-      color: var(--white);
-    }
-  }
-  
-  .footer__list {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-    }
-
-    @include tab {
-      text-align: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-      text-align: left;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 
-  .footer__list li+li {
-    margin-top: 8px;
+  @include desk {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-    @include desk {
+.footer__nav {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  text-align: center;
+  @include desk {
+    text-align: left;
+  }
+}
+
+.address {
+  color: var(--address-inactive);
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--white);
+  }
+}
+
+.footer__list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @include tab {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer__list li + li {
+  margin-top: 8px;
+
+  @include desk {
     margin-top: 9px;
-    }
   }
-  /* join footer section */
-    
-    .join__section {
-      @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
-      }
+}
+/* join footer section */
 
-      @include tab {
-        // margin-left: 165px;
-        text-align: center;
-      }
+.join__section {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
-      @include desk {
-        margin-left: 70px;
-        width: 206px;
-      }
-      
-      }
-  
-    .join {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-background);
-    margin-bottom: 20px;
+  @include tab {
+    // margin-left: 165px;
+    text-align: center;
+  }
 
-    @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
-    }
-  
-    .join__social {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .join__social-link {
-      color: var(--main-background);
-      width: 44px;
-      height: 44px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%; 
-      display: flex;  
-      justify-content: center;
-      align-items: center;  
-  
-      transition: background-color 250ms var(--cubic);
+  @include desk {
+    margin-left: 70px;
+    width: 206px;
+  }
+}
 
-      &:hover, &:focus {
-        background-color: var(--accent-color);
-      }
-        }
-    
-    .join__item:not(:last-child) {
-      margin-right: 10px;
-       }
-  
-    .join__social-icon {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
+.join {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background);
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @include desk {
+    text-align: left;
+  }
+}
+
+.join__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join__social-link {
+  color: var(--main-background);
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 
 //subscribe section
 
 .subscribe__section {
-    @media screen and (max-width: 767px) {      
-      width: 100%;
-    }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 450px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    @include desk {
-      margin-left: 93px;
-    }
-    }
-    
+  @include desk {
+    margin-left: 93px;
+  }
+}
+
 .subscribe__button {
   display: flex;
   align-items: center;
@@ -175,10 +179,10 @@
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;  
+  line-height: 30px;
   letter-spacing: 0.06em;
   color: var(--main-background);
 
@@ -201,7 +205,6 @@
   @include desk {
     display: flex;
   }
-  
 }
 
 .subscribe__input {
@@ -220,5 +223,3 @@
     width: 358px;
   }
 }
-
-
